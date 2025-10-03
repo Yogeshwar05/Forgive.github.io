@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Itishree ❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .home-screen, .message-screen {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            padding: 60px 40px;
+            max-width: 700px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+            position: relative;
+        }
+
+        .message-screen {
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .heart {
+            font-size: 100px;
+            animation: heartbeat 1.5s ease-in-out infinite;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(1.2);
+            }
+            50% {
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            color: #764ba2;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .home-subtitle {
+            color: #555;
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .click-button {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border: none;
+            padding: 20px 50px;
+            font-size: 1.4em;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(245, 87, 108, 0.4);
+            transition: all 0.3s ease;
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .click-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(245, 87, 108, 0.6);
+        }
+
+        .home-flowers {
+            font-size: 50px;
+            margin: 30px 0;
+            letter-spacing: 15px;
+        }
+
+        .subtitle {
+            color: #555;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .message {
+            color: #333;
+            font-size: 1.3em;
+            line-height: 1.8;
+            margin: 30px 0;
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        .promise {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            font-size: 1.4em;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(245, 87, 108, 0.3);
+        }
+
+        .flowers {
+            font-size: 40px;
+            margin: 20px 0;
+            letter-spacing: 10px;
+        }
+
+        .signature {
+            margin-top: 40px;
+            font-size: 1.2em;
+            color: #764ba2;
+            font-style: italic;
+        }
+
+        .sparkle {
+            position: absolute;
+            animation: sparkle 3s ease-in-out infinite;
+            font-size: 30px;
+        }
+
+        @keyframes sparkle {
+            0%, 100% {
+                opacity: 0;
+                transform: scale(0) rotate(0deg);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1) rotate(180deg);
+            }
+        }
+
+        .sparkle:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+        .sparkle:nth-child(2) { top: 20%; right: 15%; animation-delay: 1s; }
+        .sparkle:nth-child(3) { bottom: 15%; left: 15%; animation-delay: 2s; }
+        .sparkle:nth-child(4) { bottom: 20%; right: 10%; animation-delay: 1.5s; }
+
+        .hidden {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @media (max-width: 600px) {
+            .home-screen, .message-screen {
+                padding: 40px 25px;
+            }
+            h1 {
+                font-size: 2.5em;
+            }
+            .home-subtitle {
+                font-size: 1.2em;
+            }
+            .click-button {
+                padding: 15px 35px;
+                font-size: 1.2em;
+            }
+            .message {
+                font-size: 1.1em;
+            }
+            .promise {
+                font-size: 1.2em;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Screen -->
+    <div class="home-screen" id="homeScreen">
+        <span class="sparkle">✨</span>
+        <span class="sparkle">💫</span>
+        <span class="sparkle">⭐</span>
+        <span class="sparkle">✨</span>
+        
+        <div class="heart">💝</div>
+        <h1>Itishree</h1>
+        <div class="home-subtitle">I have something to tell you...</div>
+        
+        <div class="home-flowers">🌹 💕 🌹</div>
+        
+        <button class="click-button" onclick="showMessage()">
+            Click Here 💌
+        </button>
+    </div>
+
+    <!-- Message Screen -->
+    <div class="message-screen" id="messageScreen">
+        <span class="sparkle">✨</span>
+        <span class="sparkle">💫</span>
+        <span class="sparkle">⭐</span>
+        <span class="sparkle">✨</span>
+        
+        <div class="heart">💝</div>
+        <h1>Itishree</h1>
+        <div class="subtitle">My Love, My Everything</div>
+        
+        <div class="flowers">🌹 🌸 🌺 🌷 🌹</div>
+        
+        <div class="message">
+            I am truly sorry for hurting you. I know my words caused you pain, and I deeply regret that. You mean the world to me, and seeing you upset breaks my heart.
+            <br><br>
+            I want you to know that your feelings matter to me more than anything. I was wrong, and I take full responsibility for my actions.
+        </div>
+        
+        <div class="promise">
+            I Promise: I Will NEVER Taunt You Back
+        </div>
+        
+        <div class="message">
+            From this moment forward, I promise to be more understanding, more patient, and more loving. You deserve someone who lifts you up, never brings you down.
+            <br><br>
+            Please forgive me. Let's move forward together with more love, respect, and happiness.
+        </div>
+        
+        <div class="flowers">💐 💕 💐</div>
+        
+        <div class="signature">
+            Forever Yours,<br>
+            With All My Love ❤️
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            const homeScreen = document.getElementById('homeScreen');
+            const messageScreen = document.getElementById('messageScreen');
+            
+            homeScreen.classList.add('hidden');
+            messageScreen.classList.add('visible');
+        }
+    </script>
+</body>
+</html>
